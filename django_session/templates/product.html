@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{product.title}}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .container{
+                display:flex;
+                flex-direction: column;
+                align-items : center;
+            }
+
+            .main_image{
+                width:100px;
+                height:100px;
+            }
+            .related{
+                display:flex
+            }
+            .related_image{
+                width:100px;
+                height:100px;
+                margin:10px;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="container">
+           <h1>{{product.title}}</h1>
+           <img src="{{product.image_url}}" class="main_image" />
+           <p>{{product.description}}</p>
+           <h3>Recently viewd</h3>
+           <div class="related">
+               {%for product in recently_viewed_product%}
+               <img src="{{product.image_url}}" alt="" class="related_image" />
+               {%endfor%}
+
+           </div>
+
+       </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
