@@ -88,7 +88,7 @@ def product(request, product_id):
     # request.session['quesions']
     
     print(request.session.items())
-    request.session.modified = True
+    
 
     context = {
         'product': product,

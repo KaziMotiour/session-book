@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'polls',
     'django_models',
-    'django_session', 
+    'django_session',
+    'making_queryset', 
 ]
 
 MIDDLEWARE = [
