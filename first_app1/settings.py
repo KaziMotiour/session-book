@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_models',
     'django_session',
     'making_queryset', 
+    'aggregation',
 ]
 
 MIDDLEWARE = [

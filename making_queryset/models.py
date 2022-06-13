@@ -5,6 +5,7 @@ from django.db import models
 class Blog(models.Model):
     name = models.CharField(max_length=100, blank=True)
     tagline = models.TextField()
+    blog_value=models.IntegerField(default=10)
 
     def __str__(self):
         return self.name
